@@ -1,0 +1,151 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/bg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+#main{
+	position: relative;
+	top: 20%;
+	left: 40%;
+	width: 55%;
+	height: 70%;
+	/* border: 2px solid black; */
+	display: flex;
+	justify-content: space-between;
+}
+
+#desc{
+	width: 60%;
+	/* border: 1px solid black; */
+	margin-top: 5%;
+	margin-right: 5px;
+	padding-right: 20%;
+}
+
+#login{
+	padding-top: 2%;
+	margin-top: 6%;
+	width: 40%;
+	height: 70%;
+	/* border: 1px solid black; */
+	background-color: black;
+	opacity: 0.6;
+	border-radius: 5px;
+	box-shadow: 0px 0px 6px 4px lightgrey;
+}
+
+#login img{
+	width: 100px;
+	margin-top: -100px;
+	margin-left: 70px;
+	border-radius: 30px;
+	
+}
+
+h2{
+	color: white;
+	font-size: 4rem;
+	font-family: cursive;
+	text-transform: uppercase;
+	margin: 10px 0px 20px 3px;
+	line-height: 20px;
+}
+
+h1{
+	color: orange;
+	font-size: 6rem;
+	font-family: cursive;
+	text-transform: uppercase;
+	margin: 10px 10px;
+}
+
+h3{
+	color: white;
+	font-size: 2rem;
+	font-family: cursive;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#desc p{
+	font-size: 1.2rem;
+	margin-top: -15px;
+	font-family: cursive;
+	color: white;
+	text-align: center;
+}
+
+#reg-button{
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#reg-button:hover{
+	opacity: 0.5;
+}
+
+form{
+	width: 100%;
+	text-align: center;
+}
+
+form input{
+	display: inline-block;
+	width: 80%;
+	margin-top: 15px;
+	text-align: center;
+}
+
+form button{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+#login p{
+	color: white;
+	font-size: 1.1rem;
+	margin-top: -12px;
+	font-family: cursive;
+	text-align: center;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:600px) {
+	html{
+		font-size: 10px;
+	}
+	#main{
+		left: 0%;
+		top: 3%;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+	#login{
+		width: 90%;
+		height: auto;
+		margin-left: 4%;
+	}
+	#desc{
+		width: 90%;
+		margin-top: 0%;
+		margin-left: 4%;
+		background: rgba(0, 0, 0, 0.6);
+		margin-bottom: 20px;
+	}
+	h1{
+		color: #c91622;
+		margin-bottom: 1.5rem;
+	}
+	#reg-button{
+		margin-bottom: 1.5rem;
+	}
+}
